@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Input</title>
+	<style>
+		body{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 100vh;
+			overflow: hidden;
+		}
+	</style>
+</head>
+<body>
+	
+	<input type="color">
+
+<script>
+	const input = document.querySelector("input");
+		input.oninput = () => {
+			document.body.style.background = input.value;
+		}
+</script>
+
+</body>
+</html>
